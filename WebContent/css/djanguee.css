@@ -1,0 +1,30 @@
+.table-condensed>tbody>tr>td{
+	padding:8px;
+}
+
+.djanguee-btn.list-group-item{
+    padding: 20px 15px
+}
+.djanguee-btn{
+    text-align: center
+}
+.djanguee-btn .btn{
+    margin:7px 7px 7px 0;
+}
+.djanguee-btn .btn:not(.btn-icon){
+    min-width: 17.5%;
+}
+.djanguee-btn-group .btn-group{
+    margin:7px 7px 7px 0;
+}
+
+.djanguee-request .btn:not(.btn-icon) {
+    min-width: 80px;
+    padding: 2px 2px;
+}
+
+
+.djanguee-create .btn:not(.btn-icon) {
+    padding: 16px 16px;
+    font-weight:bold;
+}

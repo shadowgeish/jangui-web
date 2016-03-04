@@ -1,0 +1,1 @@
+setenv PATH /Users/serge/anaconda/bin/:$PATH

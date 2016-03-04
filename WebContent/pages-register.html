@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register page | Djanguee.</title>
+
+
+    <!--STYLESHEET-->
+    <!--=================================================-->
+
+    <!--Open Sans Font [ OPTIONAL ] -->
+     <link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&amp;subset=latin" rel="stylesheet">
+
+
+    <!--Bootstrap Stylesheet [ REQUIRED ]-->
+    <link href="WebContent/css/bootstrap.min.css" rel="stylesheet">
+
+
+    <!--Nifty Stylesheet [ REQUIRED ]-->
+    <link href="WebContent/css/nifty.min.css" rel="stylesheet">
+
+    
+    <!--Font Awesome [ OPTIONAL ]-->
+    <link href="WebContent/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+
+	<link href="WebContent/plugins/bootstrap-select/bootstrap-select.min.css" rel="stylesheet">
+	
+    <!--Demo [ DEMONSTRATION ]-->
+    <link href="WebContent/css/demo/nifty-demo.min.css" rel="stylesheet">
+
+
+
+
+    <!--SCRIPT-->
+    <!--=================================================-->
+
+    <!--Page Load Progress Bar [ OPTIONAL ]-->
+    <link href="WebContent/plugins/pace/pace.min.css" rel="stylesheet">
+    <script src="WebContent/plugins/pace/pace.min.js"></script>
+
+
+    
+
+</head>
+
+
+<body>
+	<div id="container" class="cls-container">
+		
+		
+		<!-- BACKGROUND IMAGE -->
+		<!--===================================================-->
+		<div id="bg-overlay" class="bg-img img-balloon"></div>
+		
+		<!-- HEADER -->
+		<!--===================================================-->
+		<div class="cls-header cls-header-lg">
+			<div class="cls-brand">
+				<a class="box-inline" href="index.html">
+					<!-- <img alt="Nifty Admin" src="img/logo.png" class="brand-icon"> -->
+					<span class="brand-title">Djanguee <span class="text-thin">Register</span></span>
+				</a>
+			</div>
+		</div>
+		
+		<!-- REGISTRATION FORM -->
+		<!--===================================================-->
+		
+		
+		
+		
+		
+		
+		
+		<div class="cls-content">
+			
+			
+			<div class="cls-content-lg panel" style="width:900px">
+			<div class="panel" id="register-panel">
+						<div class="eq-height clearfix">
+							<div class="col-md-5 eq-box-md text-center box-vmiddle-wrap bg-primary">
+					
+								<!-- Simple Promotion Widget -->
+								<!--===================================================-->
+								<div class="box-vmiddle pad-all">
+									<h3 class="text-thin">Register Today</h3>
+									<span class="icon-wrap icon-wrap-lg icon-circle bg-trans-light">
+										<i class="fa fa-gift fa-5x text-primary"></i>
+									</span>
+									<p>Members get <span class="text-lg text-bold">50%</span> more points, so register today and start earning points for savings on great rewards!</p>
+									<a class="btn btn-lg btn-primary btn-labeled fa fa-arrow-right" href="#">Learn More...</a>
+								</div>
+								<!--===================================================-->
+					
+							</div>
+							<div class="col-md-7 eq-box-md eq-no-panel">
+					
+										<!-- Form wizard with Validation -->
+								<!--===================================================-->
+								<span id="panel-register-overlay" data-target="#register-wz"  data-toggle="panel-overlay" ></span>
+								<div class="panel"  id="register-wz" >
+									<div class="wz-heading">
+					
+										<!--Progress bar-->
+										<div class="progress progress-sm progress-light-base">
+											<div class="progress-bar progress-bar-primary"></div>
+										</div>
+					
+										<!--Nav-->
+										<ul class="wz-icon-bw wz-nav-off">
+											<li class="col-xs-2" style="width:20%">
+												<a data-toggle="tab" href="#register-email-pass-tab" title="Email & Password" class="add-tooltip" >
+													<span class="icon-wrap icon-wrap-sm icon-circle bg-mint">
+													<i class="wz-icon fa fa-user fa-2x"></i>
+													<i class="wz-icon-done fa fa-check fa-2x"></i>
+												</span>
+												</a>
+											</li>
+											<li class="col-xs-2" style="width:20%">
+												<a data-toggle="tab" href="#check-email-bv-tab" title="Email validation" class="add-tooltip">
+													<span class="icon-wrap icon-wrap-sm icon-circle bg-info">
+													<i class="wz-icon fa fa-envelope-o fa-2x"></i>
+													<i class="wz-icon-done fa fa-check fa-2x"></i>
+												</span>
+												</a>
+											</li>
+											<li class="col-xs-2" style="width:20%">
+												<a data-toggle="tab" href="#register-fullname-tab" title="Profile" class="add-tooltip">
+													<span class="icon-wrap icon-wrap-sm icon-circle bg-info">
+													<i class="wz-icon fa fa-user fa-2x"></i>
+													<i class="wz-icon-done fa fa-check fa-2x"></i>
+												</span>
+												</a>
+											</li>
+											
+											<li class="col-xs-2" style="width:20%">
+												<a data-toggle="tab" href="#register-phone-ad-tab" title="Address" class="add-tooltip">
+													<span class="icon-wrap icon-wrap-sm icon-circle bg-warning">
+													<i class="wz-icon fa fa-home fa-2x"></i>
+													<i class="wz-icon-done fa fa-check fa-2x"></i>
+												</span>
+												</a>
+											</li>
+											<li class="col-xs-2" style="width:20%">
+												<a data-toggle="tab" href="#register-end-tab" title="Finish" class="add-tooltip">
+													<span class="icon-wrap icon-wrap-sm icon-circle bg-success">
+													<i class="wz-icon fa fa-heart fa-2x"></i>
+													<i class="wz-icon-done fa fa-check fa-2x"></i>
+												</span>
+												</a>
+											</li>
+											
+											
+											
+										</ul>
+									</div>
+					
+									<!--Form-->
+									<form id="register-wz-form" class="form-horizontal">
+										<div class="panel-body">
+											<div class="tab-content">
+					
+												<!--First tab-->
+												<div id="register-email-pass-tab" class="tab-pane">
+													<div class="form-group">
+														<label class="col-lg-3 control-label">Gender</label>
+														<div class="col-lg-7">
+															<select name="memberGender" id="memberGender" class="selectpicker col-lg-7" data-style="btn-purple">
+																<option value="Mr">Mr</option>
+																<option value="Mrs">Mrs</option>
+															</select>
+														</div>
+													</div>
+												   <div class="form-group">
+														<label class="col-lg-3 control-label">First name</label>
+														<div class="col-lg-7">
+															<input type="text" placeholder="First name" name="firstName" class="form-control">
+														</div>
+													</div>
+													<div class="form-group">
+														<label class="col-lg-3 control-label">Email</label>
+														<div class="col-lg-7">
+															<input type="email" class="form-control" name="email" placeholder="Email">
+														</div>
+													</div>
+													<div class="form-group">
+														<label class="col-lg-3 control-label">Password</label>
+														<div class="col-lg-7">
+															<input type="password" class="form-control" name="password" placeholder="Password">
+														</div>
+													</div>
+													<div class="form-group">
+														<label class="col-lg-3 control-label">Retype Password</label>
+														<div class="col-lg-7">
+															<input type="password" class="form-control" name="confirmPassword" placeholder="Retype password">
+														</div>
+													</div>
+												</div>
+												
+												
+												<div id="check-email-bv-tab" class="tab-pane fade">
+													<div class="form-group">
+														<label class="col-lg-3 control-label">Validation Code</label>
+														<div class="col-lg-7">
+															<input type="text" placeholder="Enter the code received by email" name="email_check_code" class="form-control">
+														</div>
+													</div>
+												</div>
+					
+												
+												<div id="register-fullname-tab" class="tab-pane fade">
+													
+													<div class="form-group">
+														<label class="col-lg-3 control-label">Last name</label>
+														<div class="col-lg-7">
+															<input type="text" placeholder="Last name" name="lastName" class="form-control">
+														</div>
+													</div>
+													
+													<div class="form-group">
+														<label class="col-lg-3 control-label">Date of birth</label>
+														<div class="col-lg-7">
+															<input type="text" placeholder="Last name" name="lastName" class="form-control">
+														</div>
+													</div>
+												</div>
+					
+												
+												<div id="register-phone-ad-tab" class="tab-pane">
+													<div class="form-group">
+														<label class="col-lg-3 control-label">Phone Number</label>
+														<div class="col-lg-7">
+															<input type="text" placeholder="Phone number" name="phoneNumber" class="form-control">
+														</div>
+													</div>
+													<div class="form-group">
+														<label class="col-lg-3 control-label">Address</label>
+														<div class="col-lg-7">
+															<input type="text" placeholder="Phone number" name="address" class="form-control">
+														</div>
+													</div>
+												</div>
+					
+												
+												<div id="register-end-tab" class="tab-pane  mar-btm text-center">
+													<h4>Thank you</h4>
+													<p class="text-muted">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. </p>
+												</div>
+											</div>
+										</div>
+					
+										<!--Footer button-->
+										<div class="panel-footer text-right">
+											<div class="box-inline">
+												<button type="button" class="previous btn btn-primary">Previous</button>
+												<button type="button" class="next btn btn-success">Next</button>
+												<button type="button" class="save btn btn-warning">Save and complete later</button>
+												<button type="button" class="finish btn btn-success" disabled>Finish</button>
+											</div>
+										</div>
+									</form>
+								</div>
+								<!--===================================================-->
+								<!-- End Form wizard with Validation -->
+									
+							</div>
+						</div>
+					</div>
+
+										
+				</div>
+			
+			
+			
+			<div class="pad-ver">
+				Already have an account ? <a href="login" class="btn-link mar-rgt">Sign In</a>
+			</div>
+			
+			</div>
+			
+		</div>
+		<!--===================================================-->
+		
+	
+	<!--===================================================-->
+	<!-- END OF CONTAINER -->
+
+
+		
+    <!--JAVASCRIPT-->
+    <!--=================================================-->
+
+    <!--jQuery [ REQUIRED ]-->
+    <script src="WebContent/js/jquery-2.1.1.min.js"></script>
+
+
+    <!--BootstrapJS [ RECOMMENDED ]-->
+    <script src="WebContent/js/bootstrap.min.js"></script>
+
+
+    <!--Fast Click [ OPTIONAL ]-->
+    <script src="WebContent/plugins/fast-click/fastclick.min.js"></script>
+
+    
+    <!--Nifty Admin [ RECOMMENDED ]-->
+    <script src="WebContent/js/nifty.min.js"></script>
+    
+       <!--Switchery [ OPTIONAL ]-->
+    <script src="WebContent/plugins/switchery/switchery.min.js"></script>
+    
+    <!--Bootstrap Select [ OPTIONAL ]-->
+    <script src="WebContent/plugins/bootstrap-select/bootstrap-select.min.js"></script>
+
+
+    <!--Bootstrap Wizard [ OPTIONAL ]-->
+    <script src="WebContent/plugins/bootstrap-wizard/jquery.bootstrap.wizard.min.js"></script>
+    
+    <!--Bootstrap Validator [ OPTIONAL ]-->
+    <script src="WebContent/plugins/bootstrap-validator/bootstrapValidator.min.js"></script>
+    
+    <script src="WebContent/plugins/bootbox/bootbox.min.js"></script>
+    
+    <script src="WebContent/js/register.js"></script>
+
+</body>
+</html>

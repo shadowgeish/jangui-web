@@ -1,0 +1,1478 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Djanguee | Crowd lending.</title>
+
+
+    <!--STYLESHEET-->
+    <!--=================================================-->
+
+    <!--Open Sans Font [ OPTIONAL ] -->
+     <link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&amp;subset=latin" rel="stylesheet">
+
+
+    <!--Bootstrap Stylesheet [ REQUIRED ]-->
+    <link href="WebContent/css/bootstrap.min.css" rel="stylesheet">
+
+
+    <!--Nifty Stylesheet [ REQUIRED ]-->
+    <link href="WebContent/css/nifty.min.css" rel="stylesheet">
+
+    
+    <!--Font Awesome [ OPTIONAL ]-->
+    <link href="WebContent/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+
+	<!--Bootstrap Tags Input [ OPTIONAL ]-->
+    <link href="WebContent/plugins/bootstrap-tagsinput/bootstrap-tagsinput.css" rel="stylesheet">
+    
+    <!--Switchery [ OPTIONAL ]-->
+    <link href="WebContent/plugins/switchery/switchery.min.css" rel="stylesheet">
+    
+    <link href="WebContent/plugins/summernote/summernote.min.css" rel="stylesheet">
+
+
+    <!--Bootstrap Select [ OPTIONAL ]-->
+    <link href="WebContent/plugins/bootstrap-select/bootstrap-select.min.css" rel="stylesheet">
+	<link href="WebContent/plugins/fullcalendar/fullcalendar.css" rel="stylesheet">
+	
+	<link href="WebContent/plugins/fooTable/css/footable.core.css" rel="stylesheet">
+
+    <!--Demo [ DEMONSTRATION ]-->
+    <link href="WebContent/css/demo/nifty-demo.min.css" rel="stylesheet">
+    
+    <link href="WebContent/css/djanguee.css" rel="stylesheet">
+
+
+
+
+    <!--SCRIPT-->
+    <!--=================================================-->
+	
+    <!--Page Load Progress Bar [ OPTIONAL ]-->
+    <link href="WebContent/plugins/pace/pace.min.css" rel="stylesheet">
+    <script src="WebContent/plugins/pace/pace.min.js"></script>
+
+
+    
+	<!--
+
+	REQUIRED
+	You must include this in your project.
+
+	RECOMMENDED
+	This category must be included but you may modify which plugins or components which should be included in your project.
+
+	OPTIONAL
+	Optional plugins. You may choose whether to include it in your project or not.
+
+	DEMONSTRATION
+	This is to be removed, used for demonstration purposes only. This category must not be included in your project.
+
+	SAMPLE
+	Some script samples which explain how to initialize plugins or components. This category should not be included in your project.
+
+
+	Detailed information and more samples can be found in the document.
+
+	-->
+		
+
+</head>
+
+<!--TIPS-->
+<!--You may remove all ID or Class names which contain "djanguee-", they are only used for demonstration. -->
+
+<body>
+	<div id="container" class="effect mainnav-lg" >
+		
+		<!--NAVBAR-->
+		<!--===================================================-->
+		<header id="navbar">
+			<div id="navbar-container" class="boxed">
+
+				<!--Brand logo & name-->
+				<!--================================-->
+				<div class="navbar-header">
+					<a href="" class="navbar-brand">
+						<img src="WebContent/img/logo.png" alt="Nifty Logo" class="brand-icon">
+						<div class="brand-title">
+							<span class="brand-text">Djanguee</span>
+						</div>
+					</a>
+				</div>
+				<!--================================-->
+				<!--End brand logo & name-->
+
+
+				<!--Navbar Dropdown-->
+				<!--================================-->
+				<div class="navbar-content clearfix">
+					<ul class="nav navbar-top-links pull-left">
+
+						<!--Navigation toogle button-->
+						<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+						<li class="tgl-menu-btn">
+							<a class="mainnav-toggle" href="#">
+								<i class="fa fa-navicon fa-lg"></i>
+							</a>
+						</li>
+						<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+						<!--End Navigation toogle button-->
+
+
+						<!--Messages Dropdown-->
+						<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+						<li class="dropdown">
+							<a href="#" data-toggle="dropdown" class="dropdown-toggle">
+								<i class="fa fa-envelope fa-lg"></i>
+								<span class="badge badge-header badge-warning">9</span>
+							</a>
+
+							<!--Message dropdown menu-->
+							<div class="dropdown-menu dropdown-menu-md with-arrow">
+								<div class="pad-all bord-btm">
+									<p class="text-lg text-muted text-thin mar-no">You have 3 messages.</p>
+								</div>
+								<div class="nano scrollable">
+									<div class="nano-content">
+										<ul class="head-list">
+									
+											<!-- Dropdown list-->
+											<li>
+												<a href="#" class="media">
+													<div class="media-left">
+														<img src="WebContent/img/av2.png" alt="Profile Picture" class="img-circle img-sm">
+													</div>
+													<div class="media-body">
+														<div class="text-nowrap">Andy sent you a message</div>
+														<small class="text-muted">15 minutes ago</small>
+													</div>
+												</a>
+											</li>
+									
+											<!-- Dropdown list-->
+											<li>
+												<a href="#" class="media">
+													<div class="media-left">
+														<img src="WebContent/img/av4.png" alt="Profile Picture" class="img-circle img-sm">
+													</div>
+													<div class="media-body">
+														<div class="text-nowrap">Lucy sent you a message</div>
+														<small class="text-muted">30 minutes ago</small>
+													</div>
+												</a>
+											</li>
+									
+											<!-- Dropdown list-->
+											<li>
+												<a href="#" class="media">
+													<div class="media-left">
+														<img src="WebContent/img/av3.png" alt="Profile Picture" class="img-circle img-sm">
+													</div>
+													<div class="media-body">
+														<div class="text-nowrap">Jackson sent you a message</div>
+														<small class="text-muted">40 minutes ago</small>
+													</div>
+												</a>
+											</li>
+									
+											<!-- Dropdown list-->
+											<li>
+												<a href="#" class="media">
+													<div class="media-left">
+														<img src="WebContent/img/av6.png" alt="Profile Picture" class="img-circle img-sm">
+													</div>
+													<div class="media-body">
+														<div class="text-nowrap">Donna sent you a message</div>
+														<small class="text-muted">5 hours ago</small>
+													</div>
+												</a>
+											</li>
+									
+											<!-- Dropdown list-->
+											<li>
+												<a href="#" class="media">
+													<div class="media-left">
+														<img src="WebContent/img/av4.png" alt="Profile Picture" class="img-circle img-sm">
+													</div>
+													<div class="media-body">
+														<div class="text-nowrap">Lucy sent you a message</div>
+														<small class="text-muted">Yesterday</small>
+													</div>
+												</a>
+											</li>
+									
+											<!-- Dropdown list-->
+											<li>
+												<a href="#" class="media">
+													<div class="media-left">
+														<img src="WebContent/img/av3.png" alt="Profile Picture" class="img-circle img-sm">
+													</div>
+													<div class="media-body">
+														<div class="text-nowrap">Jackson sent you a message</div>
+														<small class="text-muted">Yesterday</small>
+													</div>
+												</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+
+								<!--Dropdown footer-->
+								<div class="pad-all bord-top">
+									<a href="#" class="btn-link text-dark box-block">
+										<i class="fa fa-angle-right fa-lg pull-right"></i>Show All Messages
+									</a>
+								</div>
+							</div>
+						</li>
+						<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+						<!--End message dropdown-->
+
+
+
+
+						<!--Notification dropdown-->
+						<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+						<li class="dropdown">
+							<a href="#" data-toggle="dropdown" class="dropdown-toggle">
+								<i class="fa fa-bell fa-lg"></i>
+								<span class="badge badge-header badge-danger">5</span>
+							</a>
+
+							<!--Notification dropdown menu-->
+							<div class="dropdown-menu dropdown-menu-md with-arrow">
+								<div class="pad-all bord-btm">
+									<p class="text-lg text-muted text-thin mar-no">You have 3 messages.</p>
+								</div>
+								<div class="nano scrollable">
+									<div class="nano-content">
+										<ul class="head-list">
+
+											<!-- Dropdown list-->
+											<li>
+												<a href="#">
+													<div class="clearfix">
+														<p class="pull-left">Database Repair</p>
+														<p class="pull-right">70%</p>
+													</div>
+													<div class="progress progress-sm">
+														<div style="width: 70%;" class="progress-bar">
+															<span class="sr-only">70% Complete</span>
+														</div>
+													</div>
+												</a>
+											</li>
+
+											<!-- Dropdown list-->
+											<li>
+												<a href="#">
+													<div class="clearfix">
+														<p class="pull-left">Upgrade Progress</p>
+														<p class="pull-right">10%</p>
+													</div>
+													<div class="progress progress-sm">
+														<div style="width: 10%;" class="progress-bar progress-bar-warning">
+															<span class="sr-only">10% Complete</span>
+														</div>
+													</div>
+												</a>
+											</li>
+									
+											<!-- Dropdown list-->
+											<li>
+												<a href="#" class="media">
+													<div class="media-left">
+														<span class="icon-wrap icon-circle bg-primary">
+															<i class="fa fa-comment fa-lg"></i>
+														</span>
+													</div>
+													<div class="media-body">
+														<div class="text-nowrap">New comments waiting approval</div>
+														<small class="text-muted">15 minutes ago</small>
+													</div>
+												</a>
+											</li>
+									
+											<!-- Dropdown list-->
+											<li>
+												<a href="#" class="media">
+											<span class="badge badge-success pull-right">90%</span>
+													<div class="media-left">
+														<span class="icon-wrap icon-circle bg-danger">
+															<i class="fa fa-hdd-o fa-lg"></i>
+														</span>
+													</div>
+													<div class="media-body">
+														<div class="text-nowrap">HDD is full</div>
+														<small class="text-muted">50 minutes ago</small>
+													</div>
+												</a>
+											</li>
+									
+											<!-- Dropdown list-->
+											<li>
+												<a href="#" class="media">
+													<div class="media-left">
+														<span class="icon-wrap bg-info">
+															<i class="fa fa-file-word-o fa-lg"></i>
+														</span>
+													</div>
+													<div class="media-body">
+														<div class="text-nowrap">Write a news article</div>
+														<small class="text-muted">Last Update 8 hours ago</small>
+													</div>
+												</a>
+											</li>
+									
+											<!-- Dropdown list-->
+											<li>
+												<a href="#" class="media">
+											<span class="label label-danger pull-right">New</span>
+													<div class="media-left">
+														<span class="icon-wrap bg-purple">
+															<i class="fa fa-comment fa-lg"></i>
+														</span>
+													</div>
+													<div class="media-body">
+														<div class="text-nowrap">Comment Sorting</div>
+														<small class="text-muted">Last Update 8 hours ago</small>
+													</div>
+												</a>
+											</li>
+									
+											<!-- Dropdown list-->
+											<li>
+												<a href="#" class="media">
+													<div class="media-left">
+														<span class="icon-wrap bg-success">
+															<i class="fa fa-user fa-lg"></i>
+														</span>
+													</div>
+													<div class="media-body">
+														<div class="text-nowrap">New User Registered</div>
+														<small class="text-muted">4 minutes ago</small>
+													</div>
+												</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+
+								<!--Dropdown footer-->
+								<div class="pad-all bord-top">
+									<a href="#" class="btn-link text-dark box-block">
+										<i class="fa fa-angle-right fa-lg pull-right"></i>Show All Notifications
+									</a>
+								</div>
+							</div>
+						</li>
+						<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+						<!--End notifications dropdown-->
+
+
+
+						<!--Mega dropdown-->
+						<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+						<li class="mega-dropdown">
+							<a href="#" class="mega-dropdown-toggle">
+								<i class="fa fa-th-large fa-lg"></i>
+							</a>
+							<div class="dropdown-menu mega-dropdown-menu">
+								<div class="clearfix">
+									<div class="col-sm-12 col-md-3">
+
+										<!--Mega menu widget-->
+										<div class="text-center bg-purple pad-all">
+											<h3 class="text-thin mar-no">Weekend shopping</h3>
+											<div class="pad-ver box-inline">
+												<span class="icon-wrap icon-wrap-lg icon-circle bg-trans-light">
+													<i class="fa fa-shopping-cart fa-4x"></i>
+												</span>
+											</div>
+											<p class="pad-btm">
+												Members get <span class="text-lg text-bold">50%</span> more points. Lorem ipsum dolor sit amet!
+											</p>
+											<a href="#" class="btn btn-purple">Learn More...</a>
+										</div>
+
+									</div>
+									<div class="col-sm-4 col-md-3">
+
+										<!--Mega menu list-->
+										<ul class="list-unstyled">
+											<li class="dropdown-header">Pages</li>
+											<li><a href="#">Profile</a></li>
+											<li><a href="#">Search Result</a></li>
+											<li><a href="#">FAQ</a></li>
+											<li><a href="#">Sreen Lock</a></li>
+											<li><a href="#" class="disabled">Disabled</a></li>
+											<li class="divider"></li>
+											<li class="dropdown-header">Icons</li>
+											<li><a href="#"><span class="pull-right badge badge-purple">479</span> Font Awesome</a></li>
+											<li><a href="#">Skycons</a></li>
+										</ul>
+
+									</div>
+									<div class="col-sm-4 col-md-3">
+
+										<!--Mega menu list-->
+										<ul class="list-unstyled">
+											<li class="dropdown-header">Mailbox</li>
+											<li><a href="#"><span class="pull-right label label-danger">Hot</span>Indox</a></li>
+											<li><a href="#">Read Message</a></li>
+											<li><a href="#">Compose</a></li>
+											<li class="divider"></li>
+											<li class="dropdown-header">Featured</li>
+											<li><a href="#">Smart navigation</a></li>
+											<li><a href="#"><span class="pull-right badge badge-success">6</span>Exclusive plugins</a></li>
+											<li><a href="#">Lot of themes</a></li>
+											<li><a href="#">Transition effects</a></li>
+										</ul>
+
+									</div>
+									<div class="col-sm-4 col-md-3">
+
+										<!--Mega menu list-->
+										<ul class="list-unstyled">
+											<li class="dropdown-header">Components</li>
+											<li><a href="#">Tables</a></li>
+											<li><a href="#">Charts</a></li>
+											<li><a href="#">Forms</a></li>
+											<li class="divider"></li>
+											<li>
+												<form role="form" class="form">
+													<div class="form-group">
+														<label class="dropdown-header" for="djanguee-megamenu-input">Newsletter</label>
+														<input id="djanguee-megamenu-input" type="email" placeholder="Enter email" class="form-control">
+													</div>
+													<button class="btn btn-primary btn-block" type="submit">Submit</button>
+												</form>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</li>
+						<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+						<!--End mega dropdown-->
+
+					</ul>
+					<ul class="nav navbar-top-links pull-right">
+
+						<!--Language selector-->
+						<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+						<li class="dropdown">
+							<a id="djanguee-lang-switch" class="lang-selector dropdown-toggle" href="#" data-toggle="dropdown">
+								<span class="lang-selected">
+									<img class="lang-flag" src="WebContent/img/flags/united-kingdom.png" alt="English">
+									<span class="lang-id">EN</span>
+									<span class="lang-name">English</span>
+								</span>
+							</a>
+
+							<!--Language selector menu-->
+							<ul class="head-list dropdown-menu with-arrow">
+								<li>
+									<!--English-->
+									<a href="#" class="active">
+										<img class="lang-flag" src="WebContent/img/flags/united-kingdom.png" alt="English">
+										<span class="lang-id">EN</span>
+										<span class="lang-name">English</span>
+									</a>
+								</li>
+								<li>
+									<!--France-->
+									<a href="#">
+										<img class="lang-flag" src="WebContent/img/flags/france.png" alt="France">
+										<span class="lang-id">FR</span>
+										<span class="lang-name">Fran&ccedil;ais</span>
+									</a>
+								</li>
+								<li>
+									<!--Germany-->
+									<a href="#">
+										<img class="lang-flag" src="WebContent/img/flags/germany.png" alt="Germany">
+										<span class="lang-id">DE</span>
+										<span class="lang-name">Deutsch</span>
+									</a>
+								</li>
+								<li>
+									<!--Italy-->
+									<a href="#">
+										<img class="lang-flag" src="WebContent/img/flags/italy.png" alt="Italy">
+										<span class="lang-id">IT</span>
+										<span class="lang-name">Italiano</span>
+									</a>
+								</li>
+								<li>
+									<!--Spain-->
+									<a href="#">
+										<img class="lang-flag" src="WebContent/img/flags/spain.png" alt="Spain">
+										<span class="lang-id">ES</span>
+										<span class="lang-name">Espa&ntilde;ol</span>
+									</a>
+								</li>
+							</ul>
+						</li>
+						<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+						<!--End language selector-->
+
+
+
+						<!--User dropdown-->
+						<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+						<li id="dropdown-user" class="dropdown">
+							<a href="#" data-toggle="dropdown" class="dropdown-toggle text-right">
+								<span class="pull-right">
+									<img class="img-circle img-user media-object" src="WebContent/img/av1.png" alt="Profile Picture">
+								</span>
+								<div class="username hidden-xs" id="djanguee-user-name"></div>
+							</a>
+
+
+							<div class="dropdown-menu dropdown-menu-md dropdown-menu-right with-arrow panel-default">
+
+								<!-- Dropdown heading  -->
+								<div class="pad-all bord-btm">
+									<p class="text-lg text-muted text-thin mar-btm">750Gb of 1,000Gb Used</p>
+									<div class="progress progress-sm">
+										<div class="progress-bar" style="width: 70%;">
+											<span class="sr-only">70%</span>
+										</div>
+									</div>
+								</div>
+
+
+								<!-- User dropdown menu -->
+								<ul class="head-list">
+									<li>
+										<a href="#">
+											<i class="fa fa-user fa-fw fa-lg"></i> Profile
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<span class="badge badge-danger pull-right">9</span>
+											<i class="fa fa-envelope fa-fw fa-lg"></i> Messages
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<span class="label label-success pull-right">New</span>
+											<i class="fa fa-gear fa-fw fa-lg"></i> Settings
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<i class="fa fa-question-circle fa-fw fa-lg"></i> Help
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<i class="fa fa-lock fa-fw fa-lg"></i> Lock screen
+										</a>
+									</li>
+								</ul>
+
+								<!-- Dropdown footer -->
+								<div class="pad-all text-right">
+									<a href="logout" class="btn btn-primary">
+										<i class="fa fa-sign-out fa-fw"></i> Logout
+									</a>
+								</div>
+							</div>
+						</li>
+						<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+						<!--End user dropdown-->
+
+					</ul>
+				</div>
+				<!--================================-->
+				<!--End Navbar Dropdown-->
+
+			</div>
+		</header>
+		<!--===================================================-->
+		<!--END NAVBAR-->
+
+		<div class="boxed">
+
+			<!--CONTENT CONTAINER-->
+			<!--===================================================-->
+			<div id="content-container">
+				
+				<!--Page Title-->
+				<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+				<div id="page-title">
+					<!--<h1 class="page-header text-overflow">Dashboard</h1>-->
+					<!--Searchbox-->
+					<div class="searchbox">
+						<div class="input-group custom-search-form">
+							<input type="text" class="form-control" placeholder="Search..">
+							<span class="input-group-btn">
+								<button class="text-muted" type="button"><i class="fa fa-search"></i></button>
+							</span>
+						</div>
+					</div>
+				</div>
+				<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+				<!--End page title-->
+
+
+				<!--Breadcrumb-->
+				<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+				<ol class="breadcrumb" id="menu-tree">
+					<li class="active">Dashboard</li>
+					<!--<li><a href="#">--</a></li>-->
+				</ol>
+				<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+				<!--End breadcrumb-->
+
+
+		
+
+				<!--Page content-->
+				<!--===================================================-->
+				<div id="page-content">
+					<div class="row" id="member-profile-panel" style="display:none;">
+						<div class="col-sm-4">
+								<div class="panel">
+									<div class="panel-heading">
+										<div class="panel-control">
+											<button class="profil-panel-ref-btn btn btn-default" data-toggle="panel-overlay" data-target="#profile-panel"><i class="fa fa-refresh"></i></button>
+										</div>
+									</div>
+									<div>
+										<!--Condensed Table-->
+										<!--===================================================-->
+										<div class="panel-body">
+										
+										    <div class="nano-content">
+												
+												<!-- Simple profile -->
+												<div class="text-center pad-all">
+													<div class="pad-ver">
+														<img src="WebContent/img/av1.png" class="img-lg img-border img-circle" alt="Profile Picture">
+													</div>
+													<h4 class="text-lg text-overflow mar-no">John Doe</h4>
+													<p class="text-sm">Digital Marketing Director</p>
+					
+													<div class="pad-ver btn-group">
+														<a title="" href="#" class="btn btn-icon btn-hover-primary fa fa-facebook icon-lg add-tooltip" data-original-title="Facebook" data-container="body"></a>
+														<a title="" href="#" class="btn btn-icon btn-hover-info fa fa-twitter icon-lg add-tooltip" data-original-title="Twitter" data-container="body"></a>
+														<a title="" href="#" class="btn btn-icon btn-hover-danger fa fa-google-plus icon-lg add-tooltip" data-original-title="Google+" data-container="body"></a>
+														<a title="" href="#" class="btn btn-icon btn-hover-mint fa fa-envelope icon-lg add-tooltip" data-original-title="Email" data-container="body"></a>
+													</div>
+													<button class="btn btn-block btn-success">Follow</button>
+												</div>
+												<hr>
+												<ul class="list-group bg-trans">
+					
+													<!-- Profile Details -->
+													<li class="list-group-item list-item-sm">
+														<i class="fa fa-home fa-fw"></i> San Jose, CA
+													</li>
+													<li class="list-group-item list-item-sm">
+														<i class="fa fa-clock-o fa-fw"></i> Member since 1 years ago
+													</li>
+													<li class="list-group-item list-item-sm text-primary text-semibold">
+														<a href="#" class="btn-link">
+															<i class="fa fa-globe fa-fw"></i> http://www.themeon.net
+														</a>
+													</li>
+												</ul>
+												<hr>
+												<div class="pad-hor">
+													<h5>About Me</h5>
+													<small class="text-thin">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</small>
+												</div>
+												<hr>
+												<div class="text-center clearfix">
+													<div class="col-xs-6">
+														<p class="h3">523</p>
+														<small class="text-muted">Likes</small>
+													</div>
+													<div class="col-xs-6">
+														<p class="h3">7,345</p>
+														<small class="text-muted">Friends</small>
+													</div>
+												</div>
+											</div>
+					
+										
+										</div>
+									</div>
+									<!--===================================================-->
+									<!--End Condensed Table-->
+						
+								</div>
+						</div>
+					</div>
+					<div class="row" id="site-dashboard">
+					
+						<div class="col-sm-6">
+							<div class="panel">
+								<div class="panel-heading">
+									<div class="panel-control">
+										<button class="request-panel-ref-btn btn btn-default" data-toggle="panel-overlay" data-target="#request-panel-collapse-default"><i class="fa fa-refresh"></i></button>
+										<button class="btn btn-default" data-target="#request-panel-collapse-default" data-toggle="collapse"><i class="fa fa-chevron-down"></i></button>
+									</div>
+									<h3 class="panel-title">Requests</h3>
+								</div>
+								<div id="request-panel-collapse-default" class="collapse in">
+									<!--Condensed Table-->
+									<!--===================================================-->
+									<div class="panel-body">
+										<table class="table  table-condensed">
+												<tbody id="request-panel-body">
+												</tbody>
+										</table>
+									</div>
+								</div>
+								<!--===================================================-->
+								<!--End Condensed Table-->
+					
+							</div>
+						
+					
+					
+					
+					
+							<div class="panel">
+								<div class="panel-heading">
+									<div class="panel-control">
+										
+										<button id="djanguee-foo-collapse" class="btn btn-info">Collapse All</button>
+										<button id="djanguee-foo-expand" class="btn btn-warning">Expand All</button>
+									</div>
+									<h3 class="panel-title">Djanguees</h3>
+								</div>
+					
+								<!-- Foo Table - Expand / Collapse All Rows -->
+								<!--===================================================-->
+								<div class="panel-body">
+									<!--<div class="pad-btm">
+										<button id="djanguee-foo-collapse" class="btn btn-info">Collapse All</button>
+										<button id="djanguee-foo-expand" class="btn btn-warning">Expand All</button>
+									</div>-->
+									<table id="djanguee-foo-col-exp" class="table toggle-circle">
+										<thead>
+											<tr>
+												<th data-toggle="true">Name</th>
+												<th>Type</th>
+												<th>Next payment to </th>
+												<th data-hide="all">Amount</th>
+												<th data-hide="all">Status</th>
+											</tr>
+										</thead>
+										<tbody id="djanguee-dahsboard-body">
+											<tr>
+												<td>Isidra</td>
+												<td>Boudreaux</td>
+												<td>Traffic Court Referee</td>
+												<td>22 Jun 1972</td>
+												<td><span class="label label-success">Active</span></td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+								<!--===================================================-->
+								<!-- End Foo Table - Expand / Collapse All Rows -->
+					
+							</div>
+						</div>
+					
+					
+					
+						<div class="col-sm-6">
+								<div class="panel">
+									<div class="panel-heading">
+										<h3 class="panel-title">Event Calendar</h3>
+									</div>
+									<div class="panel-body">
+						
+										<!-- Calendar placeholder-->
+										<!-- ============================================ -->
+										<div id='djanguee-calendar'></div>
+										<!-- ============================================ -->
+						
+									</div>
+								</div>
+						</div>
+					
+					
+					
+					</div>
+				
+				
+				<div class="panel" id="djanguee-creation-panel"  style="display: none">
+				<span id="djanguee-creation-panel-overlay" data-target="#djanguee-creation-panel"  data-toggle="panel-overlay" ></span>	
+								<!-- Circular Form Wizard -->
+								<!--===================================================-->
+								<div id="djanguee-creation-step-wz">
+									<div class="wz-heading wz-w-label bg-success">
+					
+										<!--Progress bar-->
+										<div class="progress progress-xs">
+											<div style="width: 15%;" class="progress-bar progress-bar-dark"></div>
+										</div>
+					
+										<!--Nav-->
+										<ul class="wz-steps wz-icon-bw wz-nav-off text-lg">
+											<li class="col-xs-3">
+												<a data-toggle="tab" href="#djanguee-step-tab1">
+													<span class="icon-wrap icon-wrap-xs icon-circle bg-dark">
+														<span class="wz-icon icon-txt text-bold">1</span>
+														<i class="wz-icon-done fa fa-check"></i>
+													</span>
+													<small class="wz-desc box-block">Djanguee Infos</small>
+												</a>
+											</li>
+											<li class="col-xs-3">
+												<a data-toggle="tab" href="#djanguee-step-tab2">
+													<span class="icon-wrap icon-wrap-xs icon-circle bg-dark">
+														<span class="wz-icon icon-txt text-bold">2</span>
+														<i class="wz-icon-done fa fa-check"></i>
+													</span>
+													<small class="wz-desc box-block">Payment Infos</small>
+												</a>
+											</li>
+											<li class="col-xs-3">
+												<a data-toggle="tab" href="#djanguee-step-tab3">
+													<span class="icon-wrap icon-wrap-xs icon-circle bg-dark">
+														<span class="wz-icon icon-txt text-bold">3</span>
+														<i class="wz-icon-done fa fa-check"></i>
+													</span>
+													<small class="wz-desc box-block">Member rotation Infos</small>
+												</a>
+											</li>
+											<li class="col-xs-3">
+												<a data-toggle="tab" href="#djanguee-step-tab4">
+													<span class="icon-wrap icon-wrap-xs icon-circle bg-dark">
+														<span class="wz-icon icon-txt text-bold">3</span>
+														<i class="wz-icon-done fa fa-check"></i>
+													</span>
+													<small class="wz-desc box-block">Review & Finish</small>
+												</a>
+											</li>
+										</ul>
+									</div>
+					
+									<!--Form-->
+									<form class="form-horizontal">
+										<div class="panel-body">
+											<div class="tab-content">
+					
+												<!--First tab-->
+												<div id="djanguee-step-tab1" class="tab-pane">
+													<div class="form-group">
+														<label class="col-lg-3 control-label">Djanguee's Name</label>
+														<div class="col-lg-7">
+															<input type="text" class="form-control" name="name"  placeholder="Name">
+														</div>
+													</div>
+													<div class="form-group" >
+														<label class="col-lg-3 control-label">Maximum member's number [4 - 240]</label>
+														<div class="col-lg-7">
+															<input type="number" class="form-control" name="memberCount" placeholder="Number of members 4-240">
+														</div>
+													</div>
+													
+													
+													<div class="form-group" >
+														<label class="col-lg-3 control-label" id='cdjangueeType-panel-overlay'>Djanguee's Type</label>
+														<div class="col-lg-7" id="cdjangueeTypePanel">
+															<select name="cdjangueeType" id="cdjangueeType" class="selectpicker col-xs-7 col-sm-4 col-md-7 col-lg-7" data-style="btn-purple">
+																<option value="s"> Privassste</option>
+															</select>
+														</div>
+													</div>
+													
+												</div>
+					
+												<!--Second tab-->
+												<div id="djanguee-step-tab2" class="tab-pane fade">
+													<div class="form-group">
+														<label class="col-lg-3 control-label">Djanguee's rate</label>
+														<div class="col-lg-7">
+															<input type="text" class="form-control" name="rate" placeholder="Rate as decimal">
+														</div>
+													</div>
+													<div class="form-group">
+														<label class="col-lg-3 control-label">Monthly payment</label>
+														<div class="col-lg-7">
+															<input type="text" class="form-control" name="payment" placeholder="Decimal is allowed">
+														</div>
+													</div>
+													
+													<div class="form-group">
+														<label class="col-lg-3 control-label">Payment day [1-31]</label>
+														<div class="col-lg-7">
+															<input type="number" name="paymentday" class="form-control" name="range" placeholder="Numbers 1-31">
+														</div>
+													</div>
+													
+													
+												</div>
+					
+												<!--Third tab-->
+												<div id="djanguee-step-tab3" class="tab-pane">
+												
+													<div class="form-group">
+														<label class="col-lg-3 control-label" id='cdjangueeRotType-panel-overlay' >Member's repartition ( Random or manual)</label>
+														<div class="col-lg-7" id = "cdjangueeRotTypePanel">
+															<select name="cdjangueeRotType" id="cdjangueeRotType" class="selectpicker col-xs-7 col-sm-4 col-md-7 col-lg-7" data-style="btn-purple">
+																<option value="s"> Simple</option>
+															</select>
+														</div>
+													</div>
+													
+													<div class="form-group">
+														<label class="col-lg-3 control-label" id='cdjangueeIsSearchable-panel-overlay' >Is searchable ( Other user can search for your djanguee )</label>
+														<div class="col-lg-7" id = "cdjangueeRotTypePanel">
+															<select name="cdjangueeIsSearchable" id="cdjangueeIsSearchable" class="selectpicker col-xs-7 col-sm-4 col-md-7 col-lg-7" data-style="btn-purple">
+																<option value="0">No</option>
+																<option value="1">Yes</option>
+															</select>
+														</div>
+													</div>
+													
+													<div class="form-group" style="display:none;" id ="cdjangueePosForm">
+														<label class="col-lg-3 control-label" id='cdjangueePosType-panel-overlay' >Select your position</label>
+														<div class="col-lg-7" id = "cdjangueePosTypePanel">
+															<input type="number"  id="cdjangueePosType" class="form-control" name="cdjangueePosType" placeholder="Numbers 1-31">
+														</div>
+													</div>
+													
+													
+													
+												</div>
+					
+												<!--Fourth tab-->
+												<div id="djanguee-step-tab4" class="tab-pane mar-btm text-center">
+												</div>
+											</div>
+										</div>
+					
+										<!--Footer button-->
+										<div class="panel-footer text-right">
+											<div class="box-inline">
+												<button type="button" class="previous btn btn-mint">Previous</button>
+												<button type="button" class="next btn btn-mint">Next</button>
+												<button type="button" class="finish btn btn-warning" disabled>Create the djanguee</button>
+											</div>
+										</div>
+									</form>
+								</div>
+								<!--===================================================-->
+								<!-- End Circular Form Wizard -->
+					
+							</div>
+							
+							<!--Default Tabs (Left Aligned)-->
+							<!--===================================================-->
+							<div class="panel panel-success" id="djanguee_infos" style="display: none">
+								
+								
+								<!--Panel heading-->
+								<div class="panel-heading">
+									<div class="panel-control">
+					
+										<!--Nav tabs-->
+										<ul class="nav nav-tabs">
+											<li class="active"><a data-toggle="tab" href="#djanguee_infos-home">Djanguee's Home</a>
+											</li>
+											<li><a data-toggle="tab" href="#djanguee_infos-chat">Chat</a>
+											</li>
+											<li><a data-toggle="tab" href="#djanguee_infos-transactions">Historique</a>
+											</li>
+											<li><a data-toggle="tab" href="#djanguee_infos-meetings">Meeting outcome</a>
+											</li>
+											<li><a data-toggle="tab" href="#djanguee_infos-transactions">MultiMedia <span class="badge badge-purple">New</span></a>
+											</li>
+										</ul>
+					
+									</div>
+									<h3 class="panel-title" id="djanguee-panel-title"></h3> 
+								</div>
+								<!--Tabs Content-->
+								<!--Panel body-->
+								<div class="panel-body">
+								
+									<div class="tab-content">
+									
+										<div id="djanguee_infos-home" class="tab-pane fade active in">
+											<!--Djanguee's request style="display:inline-block;"-->
+											<div  class="col-sm-6" >
+											    <button class="btn btn-warning btn-labeled fa fa-credit-card add-tooltip" data-toggle="tooltip" data-original-title="Make your next djanguee payment">Payment</button><span style="padding-left:5px"></span>
+											    
+											    <button class="btn btn-warning btn-labeled fa fa-play-circle add-tooltip" data-toggle="tooltip" data-original-title="Start the djanguee rotation" >Start</button>
+											    
+											    <div style="padding-top:5px" style="min-height:250px;">
+													<table class="table  table-condensed" >
+															<tbody id="request-djanguee-panel-body">
+															</tbody>
+													</table>
+												</div>
+												
+												<span id="djanguee-member-list-panel-overlay" data-target="#djanguee-member-list-panel"  data-toggle="panel-overlay" ></span>
+												<div  id="djanguee-member-list-panel" class="panel" style="max-height:500px; overflow:scroll;">
+													
+													<div class="panel-body">
+														
+														<div class="input-group mar-btm">
+															<div style="padding-top:10px"></div>
+															<input type="text" class="form-control" id="add-member-to-djanguee-value" placeholder="Add a member then enter" value="example@email.com" data-role="tagsinput"/>
+															<span class="input-group-btn">
+																<button class="btn btn-primary btn-labeled fa fa-user-plus" id="add-member-to-djanguee" type="button">Add</button>
+															</span>
+														</div>
+														
+														<!--===================================================-->
+														<div class="list-group list-group-striped" id="djanguee-member-list-body">
+														</div>
+														<!--===================================================-->
+									
+													</div>
+												</div>
+												
+												
+											</div>
+																
+											<!--Djanguee's time line class="col-sm-6"-->
+											<div class="col-sm-6" >
+											
+												<!--Djanguee's Account-->
+												<div >
+													<div class="panel panel-dark panel-colorful">
+														<div class="pad-all media" style="padding:5px">
+															<div class="media-left">
+																<span class="icon-wrap icon-wrap-xs">
+																	<i class="fa fa-dollar fa-fw fa-2x"></i>
+																</span>
+																0
+															</div>
+															
+														</div>
+														<div class="pad-all text-left">
+																<small class="text-uppercase" id="members-details-text">Private, searchable</small>
+														</div>
+														<div class="progress progress-xs progress-dark-base mar-no">
+															<div style="width: 37.4%" class="progress-bar progress-bar-light" aria-valuemax="100" aria-valuemin="0" aria-valuenow="37.4" role="progressbar"></div>
+														</div>
+														<div class="pad-all text-right" id="members-count-text">
+															<small><span class="text-semibold" >2 members, round</span> 1 / 1</small>
+														</div>
+													</div>
+												</div>
+															<!-- Time line placeholder-->
+															<!-- ============================================ -->
+												<div id='djanguee-time-line'>
+													<div >
+														<h4 class="text-thin">Time line</h4>
+												
+														<!-- Timeline -->
+														<!--===================================================-->
+														<div class="timeline" id="timeline-djanguee-panel-body">
+												
+															<!-- Timeline header -->
+															<div class="timeline-header">
+																<div class="timeline-header-title bg-purple">Now</div>
+															</div>
+															<div class="timeline-entry">
+																<div class="timeline-stat">
+																	<div class="timeline-icon bg-warning"><i class="fa fa-comment fa-lg"></i></div>
+																	<div class="timeline-time">3 Hours ago</div>
+																</div>
+																<div class="timeline-label">
+																	<p class="mar-no pad-btm"><a href="#" class="btn-link text-semibold">Lisa D.</a> commented on <a href="#">The Article</a></p>
+																	<blockquote class="bq-sm bq-open">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt.</blockquote>
+																</div>
+															</div>
+														</div>
+														<!--===================================================-->
+														<!-- End Timeline -->
+												
+													</div>
+												</div>
+															<!-- ============================================ -->
+											
+											</div>
+						
+											
+										</div>
+										
+										<div id="djanguee_infos-chat" class="tab-pane fade">
+
+											<!--Chat widget-->
+											<!--===================================================-->
+											<div class="panel" id="demo-chat-body-panel">
+												<!--Heading-->
+												<span id="djanguee-chat-message-panel-overlay" data-target="#demo-chat-body-panel"  data-toggle="panel-overlay"></span>												<!--Widget body-->
+												<div id="demo-chat-body" class="collapse in">
+													<div class="nano" style="height:380px">
+														<div class="nano-content pad-all">
+															<ul class="list-unstyled media-block" id="djanguee-message-list">
+															</ul>
+														</div>
+													</div>
+									
+													<!--Widget footer-->
+													<div class="panel-footer">
+														<div class="row">
+															<div class="col-xs-9">
+																<input id="chat-text-message" type="text" placeholder="Enter your text" class="form-control chat-input">
+															</div>
+															<div class="col-xs-3">
+																<button id="chat-messager-sender" class="btn btn-primary btn-block" type="submit">Send</button>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<!--===================================================-->
+											<!--Chat widget-->
+										</div>
+										
+										<div id="djanguee_infos-meetings" class="tab-pane fade">
+											<div class="col-sm-7" >
+												<h4 class="text-thin">Compose a new </h4>
+												<div id="meetings-text-compose"></div>
+											</div>
+											
+										</div>
+										<div id="djanguee_infos-transactions" class="tab-pane fade">
+											<h4 class="text-thin">Second Tab Content</h4>
+											<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+										</div>
+										<div id="djanguee_infos-multimedia" class="tab-pane fade">
+											<h4 class="text-thin">Third Tab Content</h4>
+											<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+										</div>
+									</div>
+
+								</div>
+							</div>
+							<!--===================================================-->
+							<!--End Default Tabs (Left Aligned)-->
+					
+					
+					
+					
+				<!--===================================================-->
+				<!--End page content-->
+
+				</div>
+			</div>
+			<!--===================================================-->
+			<!--END CONTENT CONTAINER-->
+
+
+			
+			<!--MAIN NAVIGATION-->
+			<!--===================================================-->
+			<nav id="mainnav-container">
+				<div id="mainnav">
+
+					<!--Shortcut buttons-->
+					<!--================================-->
+					<div id="mainnav-shortcut">
+						<ul class="list-unstyled">
+							<li class="col-xs-4" data-content="Additional Sidebar">
+								<a id="djanguee-toggle-aside" class="shortcut-grid" href="#">
+									<i class="fa fa-magic"></i>
+								</a>
+							</li>
+							<li class="col-xs-4" data-content="Notification">
+								<a id="djanguee-alert" class="shortcut-grid" href="#">
+									<i class="fa fa-bullhorn"></i>
+								</a>
+							</li>
+							<li class="col-xs-4" data-content="Page Alerts">
+								<a id="djanguee-page-alert" class="shortcut-grid" href="#">
+									<i class="fa fa-bell"></i>
+								</a>
+							</li>
+						</ul>
+					</div>
+					<!--================================-->
+					<!--End shortcut buttons-->
+
+
+					<!--Menu-->
+					<!--================================-->
+					<div id="mainnav-menu-wrap">
+						<div class="nano">
+							<div class="nano-content">
+								<ul id="mainnav-menu" class="list-group">
+						
+									<!--Category name-->
+									<li class="list-header">Navigation</li>
+									
+									<!--Menu list item-->
+									<li id="djangue-creation-form-menu">
+										<a href="#" id = "djangue-creation-form">
+											<i class="fa fa-plus-square"></i>
+											<span class="menu-title">
+												<strong>Create New Djanguee</strong>
+											</span>
+										</a>
+									</li>
+									<li id="djanguee-dashboard-menu" >
+										<a href="#" id="djanguee-dashboard">
+											<i class="fa fa-dashboard"></i>
+											<span class="menu-title">
+												<strong>Dashboard</strong>
+												<span class="label label-success pull-right">Top</span>
+											</span>
+										</a>
+									</li>
+						
+									<!--Menu list item-->
+									<li>
+										<a href="#">
+											<i class="fa fa-th"></i>
+											<span class="menu-title">
+												<strong>Private Djanguees</strong>
+											</span>
+											<i class="arrow"></i>
+										</a>
+						
+										<!--Submenu-->
+										<ul class="collapse" id="private_djanguee_list">
+										</ul>
+									</li>
+									
+									<li>
+										<a href="#">
+											<i class="fa fa-th"></i>
+											<span class="menu-title">
+												<strong>Public Djanguees</strong>
+											</span>
+											<i class="arrow"></i>
+										</a>
+						
+										<!--Submenu-->
+										<ul class="collapse" id="public_djanguee_list">
+										</ul>
+									</li>
+									
+									<li id="djanguee-search-menu" >
+										<a href="#" id="djanguee-search">
+											<i class="fa fa-search"></i>
+											<span class="menu-title">
+												<strong>Search a Djanguee</strong>
+											</span>
+										</a>
+									</li>
+									
+									
+									<li>
+										<a href="#">
+											<i class="fa fa-plug"></i>
+											<span class="menu-title">
+												Simulation
+											</span>
+										</a>
+									</li>
+						
+									
+						
+									<li class="list-divider"></li>
+									
+									
+									
+									<!--Category name-->
+									<li class="list-header">Account</li>
+						
+									<!--Menu list item-->
+									
+									<li id="djanguee-payment-menu" >
+										<a href="#" id="djanguee-payment">
+											<i class="fa fa-credit-card"></i>
+											<span class="menu-title">
+												<strong>Payment</strong>
+											</span>
+										</a>
+									</li>
+									
+									<li>
+										<a href="#" id ="member-profile">
+											<i class="fa fa-flask"></i>
+											<span class="menu-title">
+												<strong>Profile</strong>
+												<span class="pull-right badge badge-warning">9</span>
+											</span>
+										</a>
+									</li>
+									
+									<!--Menu list item-->
+									<li>
+										<a href="">
+											<i class="fa fa-flask"></i>
+											<span class="menu-title">
+												<strong>Transaction</strong>
+												<span class="pull-right badge badge-warning">9</span>
+											</span>
+										</a>
+									</li>
+									
+								</ul>
+
+							</div>
+						</div>
+					</div>
+					<!--================================-->
+					<!--End menu-->
+
+				</div>
+			</nav>
+			<!--===================================================-->
+			<!--END MAIN NAVIGATION-->
+
+		</div>
+
+		
+
+        <!-- FOOTER -->
+        <!--===================================================-->
+        <footer id="footer">
+
+            <!-- Visible when footer positions are fixed -->
+            <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+            <div class="show-fixed pull-right">
+                <ul class="footer-list list-inline">
+                    <li>
+                        <p class="text-sm">SEO Proggres</p>
+                        <div class="progress progress-sm progress-light-base">
+                            <div style="width: 80%" class="progress-bar progress-bar-danger"></div>
+                        </div>
+                    </li>
+
+                    <li>
+                        <p class="text-sm">Online Tutorial</p>
+                        <div class="progress progress-sm progress-light-base">
+                            <div style="width: 80%" class="progress-bar progress-bar-primary"></div>
+                        </div>
+                    </li>
+                    <li>
+                        <button class="btn btn-sm btn-dark btn-active-success">Checkout</button>
+                    </li>
+                </ul>
+            </div>
+
+
+
+            <!-- Visible when footer positions are static -->
+            <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+            <div class="hide-fixed pull-right pad-rgt">Currently v1</div>
+
+
+
+            <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+            <!-- Remove the class name "show-fixed" and "hide-fixed" to make the content always appears. -->
+            <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+            <p class="pad-lft">&#0169; 2016 Djanguee</p>
+
+
+
+        </footer>
+        <!--===================================================-->
+        <!-- END FOOTER -->
+
+
+        <!-- SCROLL TOP BUTTON -->
+        <!--===================================================-->
+        <button id="scroll-top" class="btn"><i class="fa fa-chevron-up"></i></button>
+        <!--===================================================-->
+
+
+
+	</div>
+	<!--===================================================-->
+	<!-- END OF CONTAINER -->
+
+
+	<!--===================================================-->
+	<!-- END SETTINGS -->
+
+	
+    <!--JAVASCRIPT-->
+    <!--=================================================-->
+
+    <!--jQuery [ REQUIRED ]-->
+    <script src="WebContent/js/jquery-2.1.1.min.js"></script>
+	
+	
+
+    <!--BootstrapJS [ RECOMMENDED ]-->
+    <script src="WebContent/js/bootstrap.min.js"></script>
+
+
+    <!--Fast Click [ OPTIONAL ]-->
+    <script src="WebContent/plugins/fast-click/fastclick.min.js"></script>
+
+    
+    <!--Nifty Admin [ RECOMMENDED ]-->
+    <script src="WebContent/js/nifty.min.js"></script>
+
+
+    <!--Switchery [ OPTIONAL ]-->
+    <script src="WebContent/plugins/switchery/switchery.min.js"></script>
+
+
+    <!--Bootstrap Select [ OPTIONAL ]-->
+    <script src="WebContent/plugins/bootstrap-select/bootstrap-select.min.js"></script>
+    
+    <script src="WebContent/plugins/summernote/summernote.min.js"></script>
+	
+	<script src="WebContent/plugins/bootstrap-wizard/jquery.bootstrap.wizard.min.js"></script>
+	<script src="WebContent/plugins/bootstrap-validator/bootstrapValidator.min.js"></script>
+	
+	<script src="WebContent/plugins/bootstrap-tagsinput/bootstrap-tagsinput.min.js"></script>
+
+    <!--Demo script [ DEMONSTRATION ]-->
+    <script src="WebContent/js/demo/nifty-demo.min.js"></script>
+	
+	  <!--Full Calendar [ OPTIONAL ]-->
+    <script src="WebContent/plugins/fullcalendar/lib/moment.min.js"></script>
+	<script src="WebContent/plugins/fullcalendar/lib/jquery-ui.custom.min.js"></script>
+	<script src="WebContent/plugins/fullcalendar/fullcalendar.min.js"></script>
+	<script src="WebContent/plugins/bootbox/bootbox.min.js"></script>
+	
+	<!--FooTable [ OPTIONAL ]-->
+    <script src="WebContent/plugins/fooTable/dist/footable.all.min.js"></script>
+
+	<script src="WebContent/js/index-djanguee.js"></script>
+    
+	<!--
+
+	REQUIRED
+	You must include this in your project.
+
+	RECOMMENDED
+	This category must be included but you may modify which plugins or components which should be included in your project.
+
+	OPTIONAL
+	Optional plugins. You may choose whether to include it in your project or not.
+
+	DEMONSTRATION
+	This is to be removed, used for demonstration purposes only. This category must not be included in your project.
+
+	SAMPLE
+	Some script samples which explain how to initialize plugins or components. This category should not be included in your project.
+
+
+	Detailed information and more samples can be found in the document.
+
+	-->
+		
+
+</body>
+</html>
+
